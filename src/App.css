@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f4f8;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.from-blue-100 {
+  --tw-gradient-from: #e1effe;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(225, 239, 254, 0));
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.via-white {
+  --tw-gradient-stops: var(--tw-gradient-from), #ffffff, var(--tw-gradient-to, rgba(255, 255, 255, 0));
 }
 
-.App-link {
-  color: #61dafb;
+.to-purple-100 {
+  --tw-gradient-to: #ede9fe;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Estilos adicionales para las tarjetas de memoria */
+.memory-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.memory-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el botón de añadir recuerdo */
+.add-memory-button {
+  background-image: linear-gradient(to right, #8b5cf6, #6366f1);
+  transition: all 0.3s ease;
+}
+
+.add-memory-button:hover {
+  background-image: linear-gradient(to right, #7c3aed, #4f46e5);
 }

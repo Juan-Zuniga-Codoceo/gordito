@@ -1,15 +1,15 @@
-// setAccessCode.js
+require('dotenv').config();
 const { initializeApp } = require("firebase/app");
 const { getFirestore, setDoc, doc } = require("firebase/firestore");
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC1haLQw7IUtCMvFoi0acLWUqh3mp1RL-k",
-  authDomain: "gorditoo-2af62.firebaseapp.com",
-  projectId: "gorditoo-2af62",
-  storageBucket: "gorditoo-2af62.appspot.com",
-  messagingSenderId: "824140633961",
-  appId: "1:824140633961:web:aadf5d3a4462610d9b4ff8",
-  measurementId: "G-CJ9KJJSVPL"
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_FIREBASE_APP_ID,
+    measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
 };
 
 const app = initializeApp(firebaseConfig);

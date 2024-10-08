@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <h3 className="text-xl font-semibold">En memoria de Limachito</h3>
-            <p className="text-sm">Nuestro querido compañero felino</p>
+            <p className="text-sm">Nuestro gordito regalón.</p>
           </div>
           <div className="text-sm">
             <p>&copy; {new Date().getFullYear()} Todos los derechos reservados</p>

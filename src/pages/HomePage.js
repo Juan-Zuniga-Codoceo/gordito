@@ -41,7 +41,7 @@ const HomePage = () => {
             <img src={limachitoPic} alt="Limachito" className="w-full h-full object-cover" />
           </div>
           <p className="mt-3 max-w-md mx-auto text-xl text-gray-600">
-            Nuestro querido compañero felino, siempre curioso y lleno de vida.
+            Nuestro querido gordito. Aunque ya no esté con nosotros, siempre vivirá en nuestros corazones y recuerdos.
           </p>
           <button 
             onClick={() => setIsModalOpen(true)}
